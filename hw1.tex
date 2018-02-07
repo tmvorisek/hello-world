@@ -36,13 +36,14 @@
   \null\hfill\begin{tabular}[t]{l@{}}
   \textbf{Todd Vorisek} \\
   CS 372 \\
-  Homework 1
+  Homework 1\\
   \textit{Feb 7, 2018} \\
   \end{tabular}\\
 
-  \section*{Steps}
+  Github username: tmvorisek
+  \section*{Steps involved}
     \begin{itemize}
-      \item In github, press the plus and select new project. Found at https://github.com/tmvorisek/hello-world.git
+      \item In github, press the plus and select new project. Found at https://github.com/tmvorisek/hello-world
       \item Generate some ssh keys for new github account, so I don't have to keep signing in on pushes/pulls, log them with github.  
       \item Clone the new repo. 
       \item Open sublime text and write new fish file:\\\lstinputlisting[language=bash, caption=Fish file.]{test.fish} 
@@ -56,7 +57,18 @@
     \includegraphics[width=\textwidth]{images/shot-2018-02-06_23-17-28.jpg}
     \includegraphics[width=\textwidth]{images/shot-2018-02-06_23-19-39.jpg}
 
-
-
+  \section*{3 Git Commands}
+    \subsection{revert}
+      \begin{lstlisting} 
+        git revert [options] <commit>\end{lstlisting}
+      Get rid of one or more \verb|<commit>|. \verb|revert| effectively generates new commits that undo the changes present in the target commits. \verb|revert| can also be used to alter an existing commits message, which I know I personally will probably find useful. \\
+    \subsection{mv}
+      \begin{lstlisting} 
+        git mv [-v] [-f] [-n] [-k] <source> <destination>\end{lstlisting} 
+      Moves a file or folder specified by \verb|<source>| and stages those changes for commit, but the commits must still be performed my the user to add them to the current branch.\\
+    \subsection{grep}
+      \begin{lstlisting} 
+        git grep [options] [-e] <pattern> [<rev>...] [[--] <path>...]\end{lstlisting} 
+      Search for \verb|<pattern>| in the tracked files of the current branch's work tree. Specify \verb|-w| or \verb|--word-regexp| to use regular expressions instead of simple pattern matching. Multiple text patterns can be specified by separating them with newline characters. 
 \end{document}
 
