@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[paper=a4paper,margin=0.75in]{geometry}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\graphicspath{ {images/} }
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+
+\begin{document}
+  \null\hfill\begin{tabular}[t]{l@{}}
+  \textbf{Todd Vorisek} \\
+  CS 372 \\
+  Homework 1
+  \textit{Feb 7, 2018} \\
+  \end{tabular}\\
+
+  \section*{Steps}
+    \begin{itemize}
+      \item In github, press the plus and select new project. Found at https://github.com/tmvorisek/hello-world.git
+      \item Generate some ssh keys for new github account, so I don't have to keep signing in on pushes/pulls, log them with github.  
+      \item Clone the new repo. 
+      \item Open sublime text and write new fish file:\\\lstinputlisting[language=bash, caption=Fish file.]{test.fish} 
+      \item In a terminal add, commit and push the new file.
+      \item In sublime text, make an edit to the new fish file, then add and commit the change.
+      \item In github, make a different edit to the same line, then branch the change.
+      \item In sublime text run merge, then do the grizzly business.
+      \item Back in terminal push the merged file, and call it done.
+    \end{itemize}
+    Below are 2  screen shots of the tools used and the github network graph:\\
+    \includegraphics[width=\textwidth]{images/shot-2018-02-06_23-17-28.jpg}
+    \includegraphics[width=\textwidth]{images/shot-2018-02-06_23-19-39.jpg}
+
+
+
+\end{document}
+
